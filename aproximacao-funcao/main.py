@@ -1,15 +1,28 @@
+denominadorList = []
+numeradorList = []
 
-def calcNumerador(n):
+def calcFatorial(n):
   #fatorial não recursivo
   result = 0
-  for x in range(n+1):
-    if x == 0:
+  for i in range(n+1):
+    if i == 0:
       result = 1
     else:
-      result = result * x
-  print(result)
+      result = result * i
+  #print(result)
+  return result
 
-#def calDenominador(x,n)
+def calcNumerador(n):
+  numerador = 0
+  for i in range(n+1):
+    numerador = calcFatorial(i)
+    numeradorList.append(numerador)
+  print(numeradorList)
 
-calcNumerador(4)
+def calcDenominador(x,n):
+  denominador = 0
+  for i in range(n+1):
+    denominador = x**i
+    denominadorList.append(denominador)
+  print(denominadorList)
 
