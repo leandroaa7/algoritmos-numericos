@@ -1,1 +1,1 @@
-# algoritmos-numericos
+# algoritmos(python) baseados em cálculo numérico 
